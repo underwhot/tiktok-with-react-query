@@ -2,29 +2,7 @@ import { useQuery } from '@tanstack/react-query';
 
 import { request } from '../utils/common';
 import { REGION } from '../utils/constans';
-
-export type Counts = {
-  play_count: number;
-  digg_count: number;
-  comment_count: number;
-  share_count: number;
-};
-
-export type Author = {
-  unique_id: string;
-  nickname: string;
-  avatar: string;
-};
-
-type FeedItem = Counts & {
-  video_id: string;
-  title: string;
-  play: string;
-  music_info: {
-    title: string;
-  };
-  author: Author;
-};
+import { FeedItem } from '../types/FeedItem.type';
 
 const getFeed = async () => {
   const response = await request({

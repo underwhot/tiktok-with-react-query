@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-  max-width: 500px;
+  max-width: 400px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -157,13 +157,67 @@ body {
   border-radius: 8px;
   gap: 15px;
   font-size: 14px;
+  text-align: center;
 }
 .video-details__item {
 }
 
 .spinner {
-  min-height: 300px;
+  /* min-height: 300px; */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.video-item {
+  position: relative;
+}
+.video-icon-controls {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  z-index: 2;
+}
+.video-icon-controls svg {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.video-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.video-progress span {
+  transition: width 0.3s ease;
+  display: block;
+  height: 2px;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+
+.search-feed__container {
+  padding: 15px 0;
+}
+.infinite-scroll-component {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.infinite-scroll-component > div {
+  flex: 1 0 calc(50% - 15px);
+}
+
+.video-title {
+  padding-top: 15px;
+}
+.infinite-scroll-component__outerdiv {
+  margin-bottom: 15px;
 }

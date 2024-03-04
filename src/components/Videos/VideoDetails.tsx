@@ -1,10 +1,9 @@
-import { Counts } from '../../hooks/useFeed';
-
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 import ShareIcon from '@mui/icons-material/Share';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { formatCompactNum } from '../../utils/common';
+import { Counts } from '../../types/FeedItem.type';
 
 export const VideoDetails = ({
   play_count,

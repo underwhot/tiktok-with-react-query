@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Author } from '../../hooks/useFeed';
+import { Author } from '../../types/FeedItem.type';
 
 export const VideoUser = ({ unique_id, nickname, avatar }: Author) => {
   return (

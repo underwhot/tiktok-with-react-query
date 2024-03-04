@@ -1,5 +1,6 @@
 import { useFeed } from '../../hooks/useFeed';
 import { Spinner } from '../Spinner/Spinner';
+import { Video } from '../Videos/Video';
 import { VideoDetails } from '../Videos/VideoDetails';
 import { VideoUser } from '../Videos/VideoUser';
 
@@ -29,7 +30,7 @@ export const Feed = () => {
                     <VideoUser {...author} />
 
                     <div className="video-wrapper">
-                      <video src={play} loop autoPlay={false} muted></video>
+                      <Video heigth='auto' url={play} video_id={video_id}/>
                       <VideoDetails {...rest} />
                     </div>
 
