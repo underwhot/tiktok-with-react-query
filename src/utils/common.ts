@@ -8,8 +8,8 @@ export const request = async ({ path = '', method = 'GET' }: Request) => {
   const options = {
     method: method,
     headers: {
-      'X-RapidAPI-Key': '9de3ba7ff8msh4d7c66b2a3a226bp1cd6d3jsna38a60cd05fb',
-      'X-RapidAPI-Host': 'tiktok-video-no-watermark2.p.rapidapi.com',
+      'X-RapidAPI-Key': '80a5e00f01msh603efa34262bcabp1ca552jsne3613c8bef5e',
+      'X-RapidAPI-Host': 'tiktok-video-no-watermark2.p.rapidapi.com'  
     },
   };
 

@@ -9,6 +9,7 @@ import { Feed } from './components/Feed/Feed';
 import './reset.css';
 import './index.css';
 import { SearchFeed } from './components/Search/SearchFeed';
+import { User } from './components/User/User';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: '/search',
         element: <SearchFeed />,
+      },
+      {
+        path: '/user/:id',
+        element: <User />,
       },
     ],
   },
